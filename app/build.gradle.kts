@@ -60,6 +60,8 @@ dependencies {
     implementation ("androidx.lifecycle:lifecycle-viewmodel:$lifecycleVersion")
     implementation ("androidx.lifecycle:lifecycle-livedata:$lifecycleVersion")
 
+    implementation ("com.github.bumptech.glide:glide:4.12.0")
+    ksp ("com.github.bumptech.glide:compiler:4.12.0")
 
     implementation ("com.squareup.retrofit2:retrofit:2.9.0")
     implementation ("com.squareup.retrofit2:converter-gson:2.9.0")

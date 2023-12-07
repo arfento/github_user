@@ -26,14 +26,12 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        adapter = UserAdapter()
+        adapter = UserAdapter(context = applicationContext)
 
         binding.rvRepo.layoutManager = LinearLayoutManager(this)
         binding.rvRepo.adapter = adapter
 
         initObserve()
-
-
 
     }
 

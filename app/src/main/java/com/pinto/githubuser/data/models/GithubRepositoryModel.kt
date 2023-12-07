@@ -22,15 +22,14 @@ data class GithubRepositoryModel(
     val forks_count: Int,
     val open_issues_count: Int,
     val default_branch: String
-) {
-    data class Owner(
-        val login: String,
-        val id: Int,
-        val node_id: String,
-        val avatar_url: String,
-        val gravatar_id: String,
-        val url: String,
-        val received_events_url: String,
-        val type: String
-    )
-}
+)
+data class Owner(
+    val login: String,
+    val id: Int,
+    val node_id: String,
+    val avatar_url: String,
+    val gravatar_id: String,
+    val url: String,
+    val received_events_url: String,
+    val type: String
+)
